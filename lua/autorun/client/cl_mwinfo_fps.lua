@@ -8,7 +8,7 @@ hook.Add("mwinfo-init", "mwinfo-fps", function(typetable)
     typetable[i].ConVar = "mwinfo_fps"
     typetable[i].Name = "FPS"
     typetable[i].Info = function()
-        local fps = math.floor(1 / FrameTime())
+        local fps = math.floor(1 / RealFrameTime())
         return tostring(fps)
     end
 end)
