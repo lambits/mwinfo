@@ -26,7 +26,7 @@ end)
 local nameColor = Color(150, 150, 150)
 local infoColor = Color(200, 200, 200)
 local bgColor = Color(0, 0, 0, 200)
-hook.Add("HUDPaint", "mwinfo-update", function()
+hook.Add("DrawOverlay", "mwinfo-update", function()
     if not IsValid(LocalPlayer()) then return end
 
     local totalsize = 0
